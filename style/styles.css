@@ -1,0 +1,59 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem; /* Add this line to move the nav items to the left */
+  }
+  
+  .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
