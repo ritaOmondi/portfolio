@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #302e2e;
     color: #fff;
     padding: 1rem;
   }
@@ -17,19 +17,25 @@
     height: 40px;
     margin-right: 0.5rem;
   }
+  :root {
+    --home-hover-color: hotpink;
+    --about-hover-color: lightgreen;
+    --services-hover-color: lightskyblue;
+    --contact-hover-color: gold;
+  }
   
   .navbar-nav {
     display: flex;
     list-style-type: none;
-    margin: 0;
+    margin: 0; 
     padding: 0;
-    margin-left: 1rem; /* Add this line to move the nav items to the left */
   }
   
   .nav-item {
-    margin-left: 1rem;
+    margin-right: 100px;
+    margin-left: 2rem;
   }
-  
+
   .nav-item a {
     color: #fff;
     text-decoration: none;
@@ -39,10 +45,11 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+
   }
   
   .search-bar input {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
