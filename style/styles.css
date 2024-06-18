@@ -5,99 +5,99 @@
   box-sizing:border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-body {
-background-color: bisque;
-min-height: 100vh;
-overflow-x: hidden;
+ul{
+list-style: none;
 }
-header{
+.active{
+  color: pink;
+  text-decoration: underline;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+}
+.navbar{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 80px;
-  background-color: aliceblue;
-  padding: 20px 40px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+.nav-links{
+  display:flex;
   align-items: center;
-  box-shadow: 0 15px 15 px rgb(11, 0, 0);
-
+  font-weight: bolder;
 }
-   .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    max-width: 150px;
-    height: auto;
-    margin-right: 20px;
-  }
-  .group{
-
-    display: flex;
-    align-items: center;
-  }
-  header ul{
-    position: relative;
-    display: flex;
-    gap: 30px;
-  }
-  header ul li{
-    list-style: none;
-  }
-
-header ul li a{
- position: relative;
- text-decoration: none; 
- font-size: 1rem;
- font-weight: bold;
- text-transform: uppercase;
- letter-spacing: 0.2em;
+.nav-links li{
+  margin: 0 30px;
 }
-header ul li a::before{
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background: hotpink;
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
-  transform-origin: right;
-}
-header ul li a:hover::before{
-transform: scaleX(1);
-transform-origin: left;
-}
-header .search{
-  position: relative;
+header{
+  width:100vw;
+  height: 100vh;
+  background-image: url('./images/sense.jpg');
+  background-position: bottom;
+  background-size: cover;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 1.5em;
-  z-index: 10;
+  justify-content: center;
+}
+.header-content{
+  color: rgb(248, 248, 248);
+  margin-top: 150px;
+  
+  text-align: center;
+}
+.header-content h2{
+  font-size: 4vmin;
+}
+.line{
+  width: 150px;
+  height: 4px;
+  background: hotpink;
+  margin:10px auto;
+  border-radius: 5px;
+}
+.header-content h1{
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.ctn{
+  padding: 8px 15px;
+  background:rgb(242, 11, 111);
+  border-radius: 30px;
+  color: whitesmoke;
+}
+.menubtn{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width:40px;
   cursor: pointer;
 }
-.searchBox{
+@media  only screen and(max-width:850px){
+.navbar{
+  padding: 0;
+}
+.logo{
   position: absolute;
-  right: -100%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  background: white;
-  align-items: center;
-  padding: 0 30px;
-  transition: 0.5s ease-in-out;
+  top: 30px;
+  left: 30px;
 }
-.searchBox input{
-  width: 100%;
-  border: none;
-  outline: none;
-  color: black;
-  height: 50px;
-  font-size: 1.25em;
-  background: white;
-  border-bottom: 1px solid rgba(0,0,0,0.5);
+.nav-links{
+  flex-direction: column;
+  width:100%;
+  height:100vh;
+  justify-content: center;
+  margin-top: -900px;
+  background: rgb(77, 77, 229);
 }
+.nav-links li{
+  margin: 30px auto;
+
+}
+}
+
