@@ -34,15 +34,19 @@ a{
 .nav-links li{
   margin: 0 30px;
 }
+.nav-links li:hover{
+background-color: orangered;
+}
 header{
   width:100vw;
   height: 100vh;
-  background-image: url('./images/sense.jpg');
+  background-image: url('images/mountain.jpg');
   background-position: bottom;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 .header-content{
   color: rgb(248, 248, 248);
@@ -78,6 +82,25 @@ header{
   width:40px;
   cursor: pointer;
 }
+section{
+  width: 80%;
+  margin: 80px auto;
+}
+.title h1{
+  text-align: center;
+  color: rgb(26, 128, 237);
+
+}
+.row{
+  display: flex;
+  align-items: center;
+
+}
+.row .col img{
+  width: 80%;
+  border-radius: 5px;
+}
+
 @media  only screen and(max-width:850px){
 .navbar{
   padding: 0;
