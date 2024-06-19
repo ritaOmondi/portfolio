@@ -1,0 +1,57 @@
+*{margin:0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background: linear-gradient(90deg,blue, blue, #00f7ff, #00ccff 100%);   
+}
+.contactUs{
+    position: relative;
+    width:100%;
+    padding: 40px 100px;
+}
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactUs .title h2{
+    color:hsl(180, 44%, 94%);
+    font-weight: 500;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 35px hwb(93 0% 90% / 0.2);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map"
+    ;
+    grid-gap: 20px;
+    margin-top: 20px;
+   
+}
+.contact h3{
+    color:hwb(192 2% 75%);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+
+}
